@@ -20,6 +20,6 @@ public class BucketController {
     public ResponseEntity<?> uploadFile(@RequestParam(value = "file")
                                         MultipartFile file) throws IOException, ServletException{
         return
-                ResponseEntity.ok(this.cloudStirageHelper.getImageUrl(file,"imageupload-802aa.appspot.com"));
+                ResponseEntity.ok(this.cloudStirageHelper.getImageUrl(file,"lab12-compo.appspot.com"));
     }
 }

@@ -26,10 +26,10 @@ public class CloudStirageHelper {
         InputStream serviceAccount =
                 null;
         try{
-            serviceAccount = new ClassPathResource("imageupload-key.json").getInputStream();
+            serviceAccount = new ClassPathResource("lab12-compo-key.json").getInputStream();
             storage = StorageOptions.newBuilder()
                     .setCredentials(GoogleCredentials.fromStream(serviceAccount))
-                    .setProjectId("imageupload-802aa")
+                    .setProjectId("lab12-compo")
                     .build().getService();
         } catch (IOException e) {
             e.printStackTrace();
